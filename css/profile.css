@@ -1,0 +1,251 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    padding-top: 100px; /* Ensure enough space for fixed header */
+    box-sizing: border-box; /* Prevent padding and margins from breaking the layout */
+}
+
+/* Header Styling */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0; /* Added padding for better header spacing */
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 50px 5px; /* Top-bottom padding can help visually center */
+    font-size: 16px;
+    position: relative;
+    top: 20px;
+  }
+  
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    margin-top: 300px;
+}
+header nav {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+header nav a:hover {
+    color: #3b82f6;
+}
+
+/* Profile Container Styles */
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 30px; /* Additional space for header */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Left Side (Profile Image and Info) */
+.profile-left {
+    width: 40%; /* Adjusted width for balance */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 20px; /* Margin between profile sections */
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+}
+
+.profile-image {
+    margin-bottom: 20px;
+}
+
+.profile-img-corner {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    margin-left: 10px;
+}
+.profile-img-li {
+    margin-left: 10px;
+    position: relative;
+    bottom: 20px;
+  }
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+}
+
+.profile-left h2 {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #333;
+}
+
+.profile-left a {
+    text-decoration: none;
+    color: #1e90ff;
+    font-weight: bold;
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.profile-left a:hover {
+    color: #0056b3;
+}
+
+/* Right Side (Favorites Section) */
+.profile-right {
+    width: 55%; /* Adjusted width for balance */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+}
+
+.profile-right h3 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.profile-right ul {
+    padding-left: 20px;
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.profile-right ul li {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.profile-right p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Resetting any margin/padding issues */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1e90ff; /* Dodger blue */
+}
+
+.logo:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+.logout-btn {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    margin-left: 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-btn:hover {
+    background-color: #0056b3;
+  }
+  /* Profile Container */
+.profile-container-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    background-color: #f3f4f6;
+    padding: 2rem;
+  }
+  
+  /* Profile Box */
+  .profile-box {
+    background-color: #ffffff;
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .profile-box h2 {
+    font-size: 2rem;
+    color: #1e40af;
+    margin-bottom: 0.5rem;
+  }
+  
+  .profile-box p {
+    font-size: 1rem;
+    color: #4b5563;
+    margin: 0.5rem 0;
+  }
+  
+  .profile-box p strong {
+    color: #1e3a8a;
+  }
+  .welcome-banner {
+    text-align: center;
+    padding: 3rem 1rem 1rem;
+    background-color: #e0f2fe; /* light sky blue background */
+  }
+  
+  .welcome-banner h1 {
+    font-size: 2.5rem;
+    color: #1d4ed8; /* deep blue */
+    margin: 0;
+    font-weight: bold;
+  }
+  .logo-img {
+    position: relative;
+  top: 10px;
+    width: 40px; /* Adjust the size of the logo (smaller size) */
+    height: 40px; /* Maintain aspect ratio or adjust as needed */
+    margin-right: 10px; /* Space between the logo and the text */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image is properly fitted within the rounded container */
+  }
+  
+  

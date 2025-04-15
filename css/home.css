@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .hero-section {
+    background-image: url('../images/tour_image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+  }
+  
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+  }
+  
+  .header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    margin: 0 auto;
+    
+    margin-bottom: 200px;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .btn {
+    text-decoration: none;
+    color: white;
+    background-color: #3B82F6;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #2563EB;
+  }
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1e90ff; /* Dodger blue */
+  }
+  
+  .logo:hover {
+    color: #0056b3; /* Darker blue on hover */
+  }
+  /* Logo styling */
+.logo {
+  position: relative;
+  top: -13px;
+  display: flex;
+  align-items: center;
+  font-size: 24px; /* Adjust the text size if needed */
+  font-weight: bold;
+  text-decoration: none; /* Remove underline */
+}
+
+.logo-img {
+  position: relative;
+  width: 40px; /* Adjust the size of the logo (smaller size) */
+  height: 40px; /* Maintain aspect ratio or adjust as needed */
+  margin-right: 10px; /* Space between the logo and the text */
+  border-radius: 50%; /* Makes the image round */
+  object-fit: cover; /* Ensures the image is properly fitted within the rounded container */
+}
+  

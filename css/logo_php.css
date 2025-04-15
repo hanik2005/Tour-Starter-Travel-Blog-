@@ -1,0 +1,21 @@
+.logo-img {
+    position: relative;
+  top: 5px;
+    width: 40px; /* Adjust the size of the logo (smaller size) */
+    height: 40px; /* Maintain aspect ratio or adjust as needed */
+    margin-right: 10px; /* Space between the logo and the text */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image is properly fitted within the rounded container */
+  }
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1e90ff; /* Dodger blue */
+    position: relative;
+    bottom: 5px;
+}
+
+.logo:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
