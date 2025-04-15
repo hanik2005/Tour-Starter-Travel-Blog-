@@ -90,6 +90,29 @@ $stmt->close();
           <p>You have no favorite destinations yet.</p>
       <?php endif; ?>
     </div>
+
+    <!-- Blog Post Section -->
+<div class="profile-blog">
+  <h3>Write a Travel Blog</h3>
+  <form class="blog-form">
+    <input type="text" name="blog_title" placeholder="Blog Title" required>
+    <textarea name="blog_content" placeholder="Share your travel story..." rows="5" required></textarea>
+    <button type="submit" disabled>Post Blog</button>
+  </form>
+
+  <h3>Your Blogs</h3>
+  <div class="blog-post">
+    <h4>My First Trip to Japan</h4>
+    <p>Exploring Tokyo and Kyoto was like stepping into a different world. The food, the culture, everything was amazing!</p>
+    <small>Posted on: April 10, 2025</small>
+  </div>
+
+  <div class="blog-post">
+    <h4>A Weekend in Paris</h4>
+    <p>From the Eiffel Tower to the charming cafes, Paris truly lives up to its romantic reputation.</p>
+    <small>Posted on: March 25, 2025</small>
+  </div>
+</div>
   </div>
 </body>
 </html>
